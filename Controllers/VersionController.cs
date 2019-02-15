@@ -8,6 +8,6 @@ namespace CoreHostInfo.Controllers
     {
         // GET api/version
         [HttpGet]
-        public string Get() => JsonConvert.SerializeObject(new { version = "20190215.1" });
+        public string Get() => JsonConvert.SerializeObject(new { version = "20190215.2" });
     }
 }
