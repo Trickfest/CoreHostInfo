@@ -1,6 +1,6 @@
 # Introduction
 
-Simple web api to reveal details about the .NET Core host in which it is running.
+Simple web API to reveal details about the .NET Core host in which it is running.
 
 To invoke with PowerShell, do something like:
 
