@@ -2,6 +2,8 @@
 
 Simple web API to reveal details about the .NET Core host in which it is running.
 
+## Command Line Execution
+
 To invoke with PowerShell, do something like:
 
     # return current version and date/time
@@ -32,3 +34,13 @@ To invoke with PowerShell, do something like:
 Note that if the returned object has keys that only differ by case, like
 you might see if hosted on a Linux box, then the PowerShell parser won't deal
 with that well and the output won't be formatted into a nice table.
+
+## Docker
+
+Execute the following commands to build, run and invoke the app running in a Docker container.
+
+    docker build -t corehostinfo  .
+
+    docker run -d -e "ASPNETCORE_URLS=http://+:80"  -p 8080:80 --name corehostinfo corehostinfo
+
+    Invoke-RestMethod http://localhost:8080/api/version
