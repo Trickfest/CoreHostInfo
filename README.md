@@ -37,7 +37,7 @@ with that well and the output won't be formatted into a nice table.
 
 ## Docker
 
-Execute the following commands to build, run and invoke the app running in a Docker container.
+Execute the following commands to build, run and invoke the app running in a local Docker container.
 
     docker build -t corehostinfo  .
 
