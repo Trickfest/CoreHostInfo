@@ -1,10 +1,16 @@
 {
     "cSpell.words": [
+        "Newtonsoft",
         "aspnetcore",
         "core",
         "corehostinfo",
         "host",
         "info",
-        "requestid"
+        "localip",
+        "myip",
+        "proto",
+        "remoteip",
+        "requestid",
+        "tcpconn"
     ]
 }
