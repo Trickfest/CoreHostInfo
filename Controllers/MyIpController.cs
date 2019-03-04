@@ -11,11 +11,9 @@ namespace CoreHostInfo.Controllers
         [HttpGet]
         public string Get()
         {
-            var x = Request.HttpContext.Connection.RemoteIpAddress;
-
+            var remoteIp = Request.HttpContext.Connection.RemoteIpAddress;            
             
-            
-            return JsonConvert.SerializeObject(new { localip = x.ToString() });
+            return JsonConvert.SerializeObject(new { remoteip = remoteIp.ToString() });
         }
     }
 }
