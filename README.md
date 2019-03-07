@@ -19,6 +19,9 @@ To invoke with PowerShell, do something like:
     Invoke-RestMethod http://corehostinfo.azurewebsites.net/api/load
     Invoke-RestMethod http://corehostinfo.azurewebsites.net/api/load?blobsize=55"&"requestid=1234"&"delay=2000
 
+    # return what the host *thinks* is the client's IP address
+    Invoke-RestMethod http://corehostinfo.azurewebsites.net/api/myip
+
     # attempt to open a socket at google.com port 80
     Invoke-RestMethod http://corehostinfo.azurewebsites.net/api/tcpconn/google.com/80
 
